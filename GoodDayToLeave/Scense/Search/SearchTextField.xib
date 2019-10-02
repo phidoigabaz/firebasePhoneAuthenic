@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchTextField" customModule="GoodDayToLeave" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6p-x9-eGN">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="                                         " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyT-K3-f52">
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="28.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbW-Pq-K0C">
+                            <rect key="frame" x="0.0" y="28.5" width="340" height="1.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.5" id="1fD-l3-5wO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mbW-Pq-K0C" firstAttribute="leading" secondItem="a6p-x9-eGN" secondAttribute="leading" id="Bof-Bl-PbK"/>
+                        <constraint firstItem="mbW-Pq-K0C" firstAttribute="top" secondItem="dyT-K3-f52" secondAttribute="bottom" id="WMh-SO-bzA"/>
+                        <constraint firstItem="dyT-K3-f52" firstAttribute="top" secondItem="a6p-x9-eGN" secondAttribute="top" id="Yc7-Lc-mZE"/>
+                        <constraint firstItem="dyT-K3-f52" firstAttribute="leading" secondItem="a6p-x9-eGN" secondAttribute="leading" id="fKH-uI-YxJ"/>
+                        <constraint firstAttribute="bottom" secondItem="mbW-Pq-K0C" secondAttribute="bottom" id="jEk-TO-zL6"/>
+                        <constraint firstAttribute="trailing" secondItem="dyT-K3-f52" secondAttribute="trailing" id="ut1-Cm-aP0"/>
+                        <constraint firstAttribute="trailing" secondItem="mbW-Pq-K0C" secondAttribute="trailing" id="x2d-4f-Orf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="a6p-x9-eGN" secondAttribute="trailing" id="7WK-Dj-Ubm"/>
+                <constraint firstItem="a6p-x9-eGN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EvL-dq-0dp"/>
+                <constraint firstItem="a6p-x9-eGN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gw0-wv-tJi"/>
+                <constraint firstAttribute="bottom" secondItem="a6p-x9-eGN" secondAttribute="bottom" id="hhW-ch-J9k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="a6p-x9-eGN" id="2Gt-4I-hNd"/>
+                <outlet property="lineView" destination="mbW-Pq-K0C" id="vmh-Xb-P7D"/>
+                <outlet property="textField" destination="dyT-K3-f52" id="XP6-qg-O1R"/>
+            </connections>
+            <point key="canvasLocation" x="78.260869565217391" y="258.48214285714283"/>
+        </view>
+    </objects>
+</document>

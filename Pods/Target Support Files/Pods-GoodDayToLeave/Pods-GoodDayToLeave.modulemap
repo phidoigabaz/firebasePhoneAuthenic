@@ -1,0 +1,6 @@
+framework module Pods_GoodDayToLeave {
+  umbrella header "Pods-GoodDayToLeave-umbrella.h"
+
+  export *
+  module * { export * }
+}
